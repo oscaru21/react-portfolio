@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --background-color: #150050;
+    --primary-color: #3F0071;
+    --secondary-color: #610094;
+    --dark-background-color: #0b0127;
+    --light-background-color: #291561;
+
+    --text-primary: #fff;
+  }
+
+body {
+    background-color: var(--background-color);
+}
+

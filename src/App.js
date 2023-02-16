@@ -1,10 +1,16 @@
-import './App.css';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import { GithubProvider } from './context/github/GithubContext'
+import './index.css'
+import Github from './pages/Github';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <GithubProvider>
+      <Navbar/>
+      <Home/>
+      <Github/>
+    </GithubProvider>
   );
 }
 
