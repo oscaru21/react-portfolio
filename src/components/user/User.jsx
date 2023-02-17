@@ -9,6 +9,7 @@ import {
   Paper,
   Chip,
   Stack,
+  Button,
 } from "@mui/material";
 import { Group, PeopleOutline, LocationOn, Apartment } from "@mui/icons-material";
 
@@ -100,7 +101,9 @@ function User({ user }) {
               <LocationOn color="secondary" />
               <Typography variant="string">{location}</Typography>
             </Stack>
-            <Chip label="hireable" color="success" />
+            <Button href="https://github.com/oscaru21" target="_blank" sx={{width:"100%"}}>
+              <Chip label="hireable" color="success" sx={{width:"100%"}}/>
+            </Button>
             </Stack>
           </CardContent>
         </Card>

@@ -111,13 +111,13 @@ function About() {
                 <CircleIcon sx={{ color: "#00CA4E", height: "1rem" }} />
               </Stack>
               <Stack direction="column" spacing={2} padding="20px">
-                <Typography variant="string" color="secondary">
+                <Typography variant="string" color="white">
                 Let me introduce myself! I am a software developer who is passionate about the field of artificial intelligence, and I am currently pursuing studies in this exciting area at Centennial College. Originally from El Salvador, I bring a diverse and multicultural perspective to my work, and I am always seeking to expand my horizons and learn new things.
                 </Typography>
-                <Typography variant="string" color="secondary">
+                <Typography variant="string" color="white">
                 When I am not busy coding or studying, I enjoy spending my free time exploring the great outdoors on a hike, getting lost in the rhythms of my favorite music, or diving into a gripping Netflix Series. These hobbies allow me to recharge my batteries and maintain a healthy work-life balance, which is important to me.
                 </Typography>
-                <Typography variant="string" color="secondary">
+                <Typography variant="string" color="white">
                 As a software developer, I am a creative problem-solver who is always looking for innovative solutions to complex challenges. I am excited to be a part of the cutting-edge field of artificial intelligence and am eager to see where this technology will take us in the future.
                 </Typography>
               </Stack>
