@@ -20,7 +20,7 @@ export const searchUsers = async (text) => {
 // Get user and repos
 export const getUserAndRepos = async (login) => {
   const params = new URLSearchParams({
-    sort: 'created',
+    sort: 'updated',
     per_page: 5
   })
 

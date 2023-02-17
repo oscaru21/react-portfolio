@@ -4,10 +4,11 @@ import { getUserAndRepos } from "../context/github/GithubActions";
 import RepoList from '../components/repos/RepoList'
 import {Grid} from "@mui/material";
 import Page from "../components/Page";
+import User from "../components/user/User";
 
 
 function Github() {
-  const { repos, dispatch } = useContext(GithubContext);
+  const { user, repos, dispatch } = useContext(GithubContext);
 
   useEffect(() => {
     dispatch({ type: "SET_LOADING" });
@@ -22,13 +23,15 @@ function Github() {
   return (
     <Page
       id="GithubSection"
-      color="var(--light-background-color)"
+      
     >
+      
       <Grid
         container
         spacing={2}
         sx={{ minHeight: "calc(100vh - 75px)"}}
       >
+        <User user={user}/>
         <RepoList repos={repos} />
       </Grid>
     </Page>

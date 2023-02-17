@@ -49,7 +49,7 @@ function ContactForm() {
             onSubmit={onSubmit}
           >
             <Typography variant="h5">
-                Contact us!
+                Contact me!
             </Typography>
             <Box display="flex" flexDirection="column" justifyContent="space-around" height="100%">
               <Grid item>
