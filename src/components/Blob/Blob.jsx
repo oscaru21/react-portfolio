@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./Blob.css";
 
 function Blob({image, pColor, sColor, y}) {
   return (

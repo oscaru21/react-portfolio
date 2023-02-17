@@ -15,7 +15,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import { ReactComponent as Logo } from "../assets/images/svg/result.svg";
 
-const navItems = ["Home", "About", "Contact", "Github"];
+const navItems = ["Home", "About", "Github", "Contact"];
 const drawerWidth = 240;
 
 const Navbar = () => {

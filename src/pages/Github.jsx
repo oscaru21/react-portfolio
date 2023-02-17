@@ -2,7 +2,7 @@ import { useEffect, useContext } from "react";
 import GithubContext from "../context/github/GithubContext";
 import { getUserAndRepos } from "../context/github/GithubActions";
 import RepoList from '../components/repos/RepoList'
-import {Grid} from "@mui/material";
+import {Grid, Typography} from "@mui/material";
 import Page from "../components/Page";
 import User from "../components/user/User";
 
@@ -23,9 +23,11 @@ function Github() {
   return (
     <Page
       id="GithubSection"
-      
+      color="var(--light-background-color)"
     >
-      
+      <Typography variant="h5" sx={{color:"white"}}>
+        Github Profile
+      </Typography>
       <Grid
         container
         spacing={2}

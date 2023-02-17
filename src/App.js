@@ -27,8 +27,8 @@ function App() {
       <GithubProvider>
         <Navbar />
         <Home />
-        <About/>
         <Github />
+        <About/>
         <Contact />
       </GithubProvider>
     </ThemeProvider>
