@@ -9,16 +9,19 @@ import {
   Button,
   Paper,
   Badge,
+  CardMedia,
 } from "@mui/material";
-import {Visibility, Star} from '@mui/icons-material';
+import { Visibility, Star } from "@mui/icons-material";
 function RepoItem({ repo }) {
-  const {
-    name,
-    description,
-    html_url,
-    watchers_count,
-    stargazers_count,
-  } = repo;
+  const { name, description, html_url, watchers_count, stargazers_count } =
+    repo;
+    let image = ""
+    try {
+      image = require(`../../assets/images/png/${name}.jpg`)
+    } catch (error) {
+      
+    }
+    
 
   return (
     <Grid
@@ -32,16 +35,35 @@ function RepoItem({ repo }) {
       alignItems="center"
       flexGrow={1}
     >
-      <Paper elevation={15} sx={{ width: "100%", height:"100%", margin:"10px" }}>
+      <Paper
+        elevation={15}
+        sx={{ width: "100%", height: "100%", margin: "10px" }}
+      >
         <Card
-          sx={{ background: "var(--dark-background-color)", color: "white", height:"100%", display:"flex", flexDirection:"column", justifyContent: "space-between" }}
+          sx={{
+            background: "var(--dark-background-color)",
+            color: "white",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          }}
         >
           <CardContent>
             <Typography variant="h6">{name}</Typography>
             <Typography variant="string">{description}</Typography>
+            {image ? (
+              <CardMedia
+                component="img"
+                sx={{ width: "100%" }}
+                image={image}
+                alt="project image"
+              />
+            ) : (
+              <></>
+            )}
           </CardContent>
           <CardActions>
-            
             <Button
               size="small"
               variant="contained"
@@ -61,7 +83,12 @@ function RepoItem({ repo }) {
               <Badge color="secondary" badgeContent={watchers_count} showZero>
                 <Visibility />
               </Badge>
-              <Badge color="secondary" badgeContent={stargazers_count} showZero sx={{ marginX:"20px"}}>
+              <Badge
+                color="secondary"
+                badgeContent={stargazers_count}
+                showZero
+                sx={{ marginX: "20px" }}
+              >
                 <Star />
               </Badge>
             </Box>
