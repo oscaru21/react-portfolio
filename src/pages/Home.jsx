@@ -1,10 +1,11 @@
 import React from "react";
 import Blob from "../components/Blob/Blob";
-import { Box, Paper, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
+import Page from "../components/Page";
 function Home(props) {
   return (
     <>
-      <Box sx={{ flexGrow: 1, maxWidth: "80vw", margin: "auto", paddingTop:"75px", minHeight: "calc(100vh - 75px)"}}>
+      <Page id="HomeSection">
         <Grid container spacing={8} sx={{ minHeight: "calc(100vh - 75px)" }}>
           <Grid
             item
@@ -14,17 +15,22 @@ function Home(props) {
             direction="column"
             justifyContent="center"
             alignItems="center"
-            
+            minHeight="30vh"
+            marginTop="5vh"
           >
-            <Typography align="center" color="white" variant="h3" component="h2">
-              Hey there,
-            </Typography>
             <Typography
-            paddingX="1rem"
               align="center"
               color="white"
-              variant="h2"
-              component="h1"
+              variant="string"
+              component="h4"
+            >
+              Hey There!
+            </Typography>
+            <Typography
+              align="center"
+              color="white"
+              variant="h3"
+              component="h3"
               sx={{ fontWeight: "bold" }}
             >
               I'm Oscar Umana
@@ -34,11 +40,14 @@ function Home(props) {
               color="white"
               variant="string"
               component="p"
-              paddingX="1rem"
             >
               I'm a fullstack web developer currently studying Aritficial
               Intelligence in Centennial College.
             </Typography>
+            <Box display="flex" direction="row" marginY="15px" justifyContent="center" width="100%">
+              <Button variant="contained" size="large" sx={{marginRight: "20px"}}>About Me</Button>
+              <Button variant="outlined" size="large" color="secondary">Projects</Button>
+            </Box>
           </Grid>
           <Grid
             item
@@ -47,12 +56,12 @@ function Home(props) {
             display="flex"
             justifyContent="center"
             alignItems="center"
-            sx={{width: "100%"}}
+            sx={{ width: "100%" }}
           >
             <Blob />
           </Grid>
         </Grid>
-      </Box>
+      </Page>
     </>
   );
 }
