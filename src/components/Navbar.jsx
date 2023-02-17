@@ -12,6 +12,7 @@ import {
   useTheme,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import { ReactComponent as Logo } from "../assets/images/svg/result.svg";
 
@@ -63,6 +64,14 @@ const Navbar = () => {
                 sx={{ width: drawerWidth }}
               >
                 <List>
+                <ListItem button onClick={handleMobileMenuClose}>
+                <Button
+                  href="https://www.linkedin.com/in/oscarumana21/"
+                  target="_blank"
+                >
+                  <LinkedInIcon sx={{ fill: "#0072b1" }}/>
+                </Button>
+                </ListItem>
                   {navItems.map((item) => (
                     <ListItem button key={item} onClick={handleMobileMenuClose}>
                       <Button href={`#${item}Section`}>{item}</Button>
@@ -73,6 +82,12 @@ const Navbar = () => {
             </>
           ) : (
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              <Button
+                  href="https://www.linkedin.com/in/oscarumana21/"
+                  target="_blank"
+                >
+                  <LinkedInIcon sx={{ fill: "#0072b1" }}/>
+                </Button>
               {navItems.map((item) => (
                 <Button
                   key={item}

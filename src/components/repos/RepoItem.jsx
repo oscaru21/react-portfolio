@@ -45,6 +45,7 @@ function RepoItem({ repo }) {
             <Button
               size="small"
               variant="contained"
+              target="_blank"
               href={html_url}
               sx={{ background: "var(--primary-color)" }}
             >
