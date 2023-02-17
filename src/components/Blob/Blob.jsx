@@ -1,9 +1,8 @@
 import React from "react";
-import pp from "../../assets/images/png/pp.png";
 
 import "./Blob.css";
 
-function Blob() {
+function Blob({image, pColor, sColor, y}) {
   return (
     <svg class="blob" viewBox="0 0 200 200">
       <svg viewBox="0 0 200 200">
@@ -40,7 +39,7 @@ function Blob() {
             d="M49.6,-65.8C62.5,-59,70,-42.1,71.6,-25.9C73.3,-9.7,69.1,5.7,63.1,19.3C57,32.9,49,44.7,38.2,55.2C27.3,65.7,13.7,74.9,0.3,74.4C-13,74,-26,63.8,-36.7,53.3C-47.4,42.8,-55.9,31.8,-61.6,18.9C-67.4,6,-70.5,-9,-67.4,-22.9C-64.3,-36.9,-55,-49.9,-42.7,-56.9C-30.4,-63.9,-15.2,-65,1.6,-67.2C18.4,-69.3,36.7,-72.6,49.6,-65.8Z"
             transform="translate(100 100)"
           />
-          <image class="blob-img" x="40" y="20" href={pp} />
+          <image class="blob-img" x="40" y={y} href={image} />
         </g>
       </svg>
     </svg>

@@ -2,6 +2,8 @@ import React from "react";
 import Blob from "../components/Blob/Blob";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import Page from "../components/Page";
+import pp from "../assets/images/png/pp.png"
+
 function Home(props) {
   return (
     <>
@@ -58,7 +60,7 @@ function Home(props) {
             alignItems="center"
             sx={{ width: "100%" }}
           >
-            <Blob />
+            <Blob image={pp} y="20"/>
           </Grid>
         </Grid>
       </Page>

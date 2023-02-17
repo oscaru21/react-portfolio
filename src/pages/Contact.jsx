@@ -2,6 +2,8 @@ import React from "react";
 import Page from "../components/Page";
 import { Grid } from "@mui/material";
 import ContactForm from "../components/ContactForm/ContactForm";
+import Blob from "../components/Blob/Blob";
+import memoji from "../assets/images/png/memoji.png";
 
 function Contact() {
   return (
@@ -18,6 +20,7 @@ function Contact() {
           minHeight="30vh"
           marginTop="5vh"
         >
+          <Blob image={memoji} y="55" />
         </Grid>
         <Grid
           item
@@ -26,9 +29,9 @@ function Contact() {
           display="flex"
           justifyContent="center"
           alignItems="center"
-          sx={{ width: "100%", marginY:"100px" }}
+          sx={{ width: "100%", marginY: "100px" }}
         >
-          <ContactForm/>
+          <ContactForm />
         </Grid>
       </Grid>
     </Page>
