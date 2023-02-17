@@ -33,7 +33,7 @@ function Home(props) {
               component="h3"
               sx={{ fontWeight: "bold" }}
             >
-              I'm Oscar Umana
+              I'M OSCAR UMANA
             </Typography>
             <Typography
               align="center"
@@ -45,8 +45,8 @@ function Home(props) {
               Intelligence in Centennial College.
             </Typography>
             <Box display="flex" direction="row" marginY="15px" justifyContent="center" width="100%">
-              <Button variant="contained" size="large" sx={{marginRight: "20px"}}>About Me</Button>
-              <Button variant="outlined" size="large" color="secondary">Projects</Button>
+              <Button href="#AboutSection" variant="contained" size="large" sx={{marginRight: "20px"}}>About Me</Button>
+              <Button href="#ProjectsSection" variant="outlined" size="large" color="secondary">Projects</Button>
             </Box>
           </Grid>
           <Grid

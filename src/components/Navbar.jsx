@@ -8,7 +8,6 @@ import {
   Button,
   List,
   ListItem,
-  ListItemText,
   useMediaQuery,
   useTheme,
 } from "@mui/material";

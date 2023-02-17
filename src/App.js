@@ -5,6 +5,7 @@ import "./index.css";
 import Github from "./pages/Github";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Contact from "./pages/Contact";
 
 let theme = createTheme({
   typography: {
@@ -26,6 +27,7 @@ function App() {
         <Navbar />
         <Home />
         <Github />
+        <Contact />
       </GithubProvider>
     </ThemeProvider>
   );
